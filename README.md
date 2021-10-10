@@ -7,7 +7,10 @@ Discord bot with music player, bug system and moderation tools
 3) Type `yarn start` to run your app
 4) Configure your .env:
 `TOKEN = ""
+
 PREFIX = "!"
+
 ANNOU_ADMINS = []
+
 ANNOU_IGNORE = []`
 5) enjoy)
