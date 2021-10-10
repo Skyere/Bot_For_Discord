@@ -5,4 +5,9 @@ Discord bot with music player, bug system and moderation tools
 1) Clone repositories
 2) Type `npm init` and `npm install --global yarn`  in your terminal/console
 3) Type `yarn start` to run your app
-4) enjoy)
+4) Configure your .env:
+`TOKEN = ""
+PREFIX = "!"
+ANNOU_ADMINS = []
+ANNOU_IGNORE = []`
+5) enjoy)
