@@ -10,5 +10,6 @@ Discord bot with music player, bug system and moderation tools
 PREFIX = "!"
 ANNOU_ADMINS = []
 ANNOU_IGNORE = []`
+
 ![image](https://user-images.githubusercontent.com/70713060/136715588-87de7d61-7133-41dc-8958-60c3a7522658.png)
 # 5) enjoy)
