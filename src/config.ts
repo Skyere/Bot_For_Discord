@@ -6,7 +6,10 @@ dotenv.config();
 
 export default validateConfig({
     token: getStringFromEnvParser("TOKEN"),
-    prefix: getStringFromEnvParser("PREFIX"),
-    usersThatAllowedToUseAnnouncementCommand: getListFromEnvParser("ANNOU_ADMINS"),
-    usersToBeIgnoredByAnnouncementCommand: getListFromEnvParser("ANNOU_IGNORE"),
+    // @ts-ignore
+    prefix: process.env.PREFIX,
+    // @ts-ignore
+    usersThatAllowedToUseAnnouncementCommand: process.env.ANNOU_ADMINS,
+    // @ts-ignore
+    usersToBeIgnoredByAnnouncementCommand: process.env.ANNOU_IGNORE,
 })
