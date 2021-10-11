@@ -5,7 +5,8 @@ import { Client, Message, MessageEmbed } from "discord.js";
 import { validateNotNil } from "validation-utils";
 
 export const annou = async (client: Client, message: Message) => {
-    if(!message.member || !config.usersThatAllowedToUseAnnouncementCommand.includes(message.member.id)) {
+    // @ts-ignore
+    if(!message.member || !process.env.ANNOU_ADMINS.includes(message.member.id)) {
         return message.reply("You do not have permission to do that!");
     }
 

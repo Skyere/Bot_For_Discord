@@ -7,11 +7,14 @@ export const commandDispatcher = async (client: Client, message: Message) => {
         return;
     }
 
-    if(message.content.indexOf(config.prefix) !== 0) {
+
+    // @ts-ignore
+    if(message.content.indexOf(process.env.PREFIX) !== 0) {
         return;
     }
 
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    // @ts-ignore
+    const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
     const command = args.shift()?.toLowerCase();
 
     // @ts-ignore
