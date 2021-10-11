@@ -1,4 +1,3 @@
-import config from "@/config";
 import { logger } from "@/logger";
 import { sleep } from "@/util";
 import { Client, Message, MessageEmbed } from "discord.js";
