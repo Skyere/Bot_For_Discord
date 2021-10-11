@@ -80,5 +80,5 @@ client.on("message", async (message) => {
         await message.react("❎");
     }
 });
-
+// @ts-ignore
 client.login(process.env.JS_TOKEN);
