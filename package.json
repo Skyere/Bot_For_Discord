@@ -28,7 +28,7 @@
     "typescript-transform-paths": "^3.1.0"
   },
   "scripts": {
-    "start": "ts-node-dev -C ttypescript src/index.ts",
+    "start": "node --experimental-worker dist/index.js",
     "dev": "ts-node-dev -C ttypescript src/index.ts",
     "build": "ttsc",
     "test": "echo \"Error: no test specified\" && exit 1"
